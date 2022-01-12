@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
 
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
@@ -10,18 +10,18 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 String localBintrayUser = properties.getProperty("bintray.user")
 String localBintrayApikey = properties.getProperty("bintray.apikey")
 
-publish {
-    bintrayUser = localBintrayUser   //bintray.com用户名
-    bintrayKey = localBintrayApikey  //bintray.com apikey
-    dryRun = false
-    repoName = 'MatisseKotlin'
-    userOrg = 'nfleo'//bintray.com用户名
-    groupId = 'com.nfleo'//jcenter上的路径
-    artifactId = 'MatisseKotlin'//项目名称
-    publishVersion = '2.1.1'//版本号
-    desc = 'this is for MatisseKotlin'
-    website = 'https://github.com/NFLeo/Matisse-Kotlin'
-}
+//publish {
+//    bintrayUser = localBintrayUser   //bintray.com用户名
+//    bintrayKey = localBintrayApikey  //bintray.com apikey
+//    dryRun = false
+//    repoName = 'MatisseKotlin'
+//    userOrg = 'nfleo'//bintray.com用户名
+//    groupId = 'com.nfleo'//jcenter上的路径
+//    artifactId = 'MatisseKotlin'//项目名称
+//    publishVersion = '2.1.1'//版本号
+//    desc = 'this is for MatisseKotlin'
+//    website = 'https://github.com/NFLeo/Matisse-Kotlin'
+//}
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
