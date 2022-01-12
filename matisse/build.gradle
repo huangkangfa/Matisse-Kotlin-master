@@ -7,8 +7,8 @@ apply plugin: 'kotlin-android-extensions'
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-String localBintrayUser = properties.getProperty("bintray.user")
-String localBintrayApikey = properties.getProperty("bintray.apikey")
+//String localBintrayUser = properties.getProperty("bintray.user")
+//String localBintrayApikey = properties.getProperty("bintray.apikey")
 
 //publish {
 //    bintrayUser = localBintrayUser   //bintray.com用户名
